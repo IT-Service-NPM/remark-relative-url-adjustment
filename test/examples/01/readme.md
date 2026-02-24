@@ -29,7 +29,6 @@ export async function remarkDirectiveUsingExample(
     .use(remarkRelativeUrlsAdjustment)
     .process(await vFile.read(filePath));
 };
-
 ```
 
 Source file:
@@ -44,7 +43,6 @@ Hello. I am the included. Test image:
 ![Test local image with space](test%20image.png)
 
 ![Test web image](https://img.shields.io/badge/github-repo-blue?logo=github)
-
 ```
 
 Remark output:
@@ -57,5 +55,4 @@ Hello. I am the included. Test image:
 ![Test local image with space](subfolder1/test%20image.png)
 
 ![Test web image](https://img.shields.io/badge/github-repo-blue?logo=github)
-
 ```
