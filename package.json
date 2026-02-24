@@ -5,8 +5,10 @@
 	"description": "The Remark plugin streamlines URL adjustments in Markdown files, ensuring links remain accurate even after file relocations or inclusions",
 	"keywords": [
 		"markdown",
-		"heading",
-		"depth",
+		"url",
+		"definition",
+		"image",
+		"link",
 		"mdast-plugin",
 		"remark-plugin"
 	],
