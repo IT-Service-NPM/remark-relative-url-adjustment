@@ -38,17 +38,19 @@ declare module 'unified' {
 
       /**
        * markdown file path before moving or including.
+       * If not specified, file.path used
        *
        * @public
        */
-      sourcePath: string,
+      sourcePath?: string,
 
       /**
        * markdown file path after moving or including.
+       * If not specified, <current dir>/<filename> used
        *
        * @public
        */
-      destinationPath: string
+      destinationPath?: string
     }
   }
 
@@ -74,7 +76,7 @@ export function remarkRelativeUrlsAdjustment(
 
   const processor: Processor = this;
 
-  return function (tree: Nodes, _file: VFile): Nodes {
+  return function (tree: Nodes, file: VFile): Nodes {
     const filePathChanges =
       processor.data().filePathChanges;
 
@@ -88,10 +90,14 @@ export function remarkRelativeUrlsAdjustment(
               const node: Resource = _node;
               if (!(URL.canParse(node.url) || node.url.startsWith('/'))) {
                 node.url = RelateUrl.relate(
-                  url.pathToFileURL(filePathChanges.destinationPath).href,
+                  url.pathToFileURL(
+                    filePathChanges.destinationPath ?? './'
+                  ).href,
                   new URL(
                     node.url,
-                    url.pathToFileURL(filePathChanges.sourcePath)
+                    url.pathToFileURL(
+                      filePathChanges.sourcePath ?? file.path
+                    )
                   ).href
                 );
               }
