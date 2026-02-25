@@ -13,6 +13,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/IT-Service-NPM/remark-relative-url-adjustment/compare/v1.0.1...v1.1.0) (2026-02-24)
+
+
+### Features
+
+* the `sourcePath` is now optional ([3f01d06](https://github.com/IT-Service-NPM/remark-relative-url-adjustment/commit/3f01d06a6120b395bf4d8c9e6f5849ae96c84cd7))
+
 ## [1.0.1](https://github.com/IT-Service-NPM/remark-relative-url-adjustment/compare/v1.0.0...v1.0.1) (2026-02-24)
 
 
