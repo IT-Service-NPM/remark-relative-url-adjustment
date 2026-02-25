@@ -44,7 +44,7 @@
 
 [build-url]: https://github.com/IT-Service-NPM/remark-relative-url-adjustment/actions/workflows/ci.yml
 
-[tests]: https://img.shields.io/endpoint?logo=vitest&url=https%3A%2F%2Fgist.githubusercontent.com%2Fsergey-s-betke%2Fd70e4de09a490afc9fb7a737363b231a%2Fraw%2Fremark-relative-url-adjustment-junit-tests.json
+[tests]: https://img.shields.io/endpoint?logo=node.js&url=https%3A%2F%2Fgist.githubusercontent.com%2Fsergey-s-betke%2Fd70e4de09a490afc9fb7a737363b231a%2Fraw%2Fremark-relative-url-adjustment-junit-tests.json
 
 [tests-url]: https://github.com/IT-Service-NPM/remark-relative-url-adjustment/actions/workflows/ci.yml
 
@@ -65,11 +65,13 @@ to ensure they are accurate.
 
 ## Contents
 
-- [Install](#install)
-- [Examples](#examples)
-  - [Updating relative url for links, images](#updating-relative-url-for-linksimages)
-- [API](#api)
-- [License](#license)
+- [@it-service-npm/remark-relative-url-adjustment Remark plugin](#it-service-npmremark-relative-url-adjustment-remark-plugin)
+  - [Contents](#contents)
+  - [Install](#install)
+  - [Examples](#examples)
+    - [Updating relative url for links, images](#updating-relative-url-for-linksimages)
+  - [API](#api)
+  - [License](#license)
 
 ## Install
 

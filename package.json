@@ -44,7 +44,8 @@
 		"CI": "npm run build && npm run lint && npm run test && npm run update-readme-API && npm run update-readme",
 		"check-exports": "attw --pack .",
 		"lint": "tsc && eslint",
-		"test": "vitest run --coverage",
+		"test": "node --import tsx --experimental-transform-types --experimental-test-module-mocks --experimental-test-coverage --test-reporter=spec --test-reporter=junit --test-reporter=lcov --test-reporter-destination=stdout --test-reporter-destination=test/results/junit-report.xml --test-reporter-destination=coverage/lcov.info --test",
+		"update-test-snapshots": "node --import tsx --experimental-transform-types --experimental-test-module-mocks --test-update-snapshots --test",
 		"update-readme-API": "npx api-extractor run --local && npx api-documenter markdown -i ./temp -o ./docs",
 		"update-examples-readme": "remark test/examples/*/readme.md --output",
 		"update-main-readme": "remark .readme.md --output README.md",
@@ -57,7 +58,6 @@
 		"unist-util-visit": "^5.1.0"
 	},
 	"devDependencies": {
-		"@altano/vitest-plugins": "^1.1.1",
 		"@commitlint/cli": "^20.3.0",
 		"@commitlint/config-angular": "^20.3.0",
 		"@commitlint/config-conventional": "^20.3.0",
@@ -79,8 +79,6 @@
 		"@types/relateurl": "^0.2.33",
 		"@typescript-eslint/eslint-plugin": "^8.56.0",
 		"@typescript-eslint/parser": "^8.56.0",
-		"@vitest/coverage-istanbul": "^4.0.16",
-		"@vitest/eslint-plugin": "^1.6.8",
 		"conventional-changelog-cli": "^5.0.0",
 		"eslint": "^10.0.0",
 		"eslint-config-prettier": "^10.1.8",
@@ -104,11 +102,10 @@
 		"semantic-release": "^25.0.2",
 		"to-vfile": "^8.0.0",
 		"tsdoc-markdown": "^1.0.0",
+		"tsx": "^4.21.0",
 		"typescript": "^5.9.3",
 		"typescript-eslint": "^8.56.0",
 		"unified": "^11.0.5",
-		"vfile": "^6.0.3",
-		"vite-plugin-vitest-typescript-assert": "^1.1.4",
-		"vitest": "^4.0.18"
+		"vfile": "^6.0.3"
 	}
 }

@@ -1,8 +1,10 @@
 node_modules
 dist
-tsconfig.tsbuildinfo
+*.tsbuildinfo
 **/tsconfig.tsbuildinfo
-coverage
+coverage/lcov.info
+test/results/**/*.xml
+test/results/*.xml
 temp
 package-lock.json
 *.tgz
