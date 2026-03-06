@@ -41,7 +41,7 @@ importers:
         version: 5.0.1
       '@it-service-npm/semantic-release-preset':
         specifier: github:IT-Service-NPM/semantic-release-preset#main
-        version: https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/65e97fe17b3b410e50a38799c9bd15ff70a6f614
+        version: https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/888d228f7569882ac6aa54ba84fce0e774075593
       '@microsoft/api-documenter':
         specifier: ^7.29.6
         version: 7.29.6(@types/node@25.3.5)
@@ -527,8 +527,8 @@ packages:
     resolution: {integrity: sha512-0EuH/SOJHb0qmwZWgL1ly78Xg3FMyxSSl6bAsDyrXSssxNHgCpuMCRGA/l49+JfNEIlZF5InqM20YFS3/uhxjA==}
     engines: {node: '>=22.17'}
 
-  '@it-service-npm/semantic-release-preset@https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/65e97fe17b3b410e50a38799c9bd15ff70a6f614':
-    resolution: {tarball: https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/65e97fe17b3b410e50a38799c9bd15ff70a6f614}
+  '@it-service-npm/semantic-release-preset@https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/888d228f7569882ac6aa54ba84fce0e774075593':
+    resolution: {tarball: https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/888d228f7569882ac6aa54ba84fce0e774075593}
     version: 1.0.0
     engines: {node: '>=22.0'}
 
@@ -3789,7 +3789,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@it-service-npm/semantic-release-preset@https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/65e97fe17b3b410e50a38799c9bd15ff70a6f614': {}
+  '@it-service-npm/semantic-release-preset@https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/888d228f7569882ac6aa54ba84fce0e774075593': {}
 
   '@microsoft/api-documenter@7.29.6(@types/node@25.3.5)':
     dependencies:
