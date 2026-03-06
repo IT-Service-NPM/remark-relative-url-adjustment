@@ -105,7 +105,7 @@ jobs:
       shell: bash
       run: pnpm run --if-present build:readme
 
-    - uses: codfish/semantic-release-action@v4
+    - uses: codfish/semantic-release-action@v5
       env:
         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
