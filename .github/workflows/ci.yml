@@ -86,7 +86,28 @@ jobs:
       pull-requests: write
       id-token: write
     steps:
-      - uses: IT-Service-NPM/.github/.github/actions/publish-package@main
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+    - uses: actions/checkout@v6
+      with:
+        fetch-depth: 0
+
+    - uses: IT-Service-NPM/.github/.github/actions/setup@main
+      with:
+        node-version: "24.x"
+
+    - uses: IT-Service-NPM/.github/.github/actions/download-package-dist@main
+
+    - name: Update API documentation
+      shell: bash
+      run: pnpm run --if-present build:readme:API
+
+    - name: Update readme.md
+      shell: bash
+      run: pnpm run --if-present build:readme
+
+    - uses: codfish/semantic-release-action@v4
+      env:
+        GIT_AUTHOR_NAME: "github-actions-shell"
+        GIT_AUTHOR_EMAIL: "github-actions[bot]@users.noreply.github.com"
+        GIT_COMMITTER_NAME: "github-actions-shell"
+        GIT_COMMITTER_EMAIL: "github-actions[bot]@users.noreply.github.com"

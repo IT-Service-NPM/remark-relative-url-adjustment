@@ -41,7 +41,7 @@ importers:
         version: 5.0.1
       '@it-service-npm/semantic-release-preset':
         specifier: github:IT-Service-NPM/semantic-release-preset#main
-        version: https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/aba4bb666ac85ff753679d2eb25c6db8d3302f3f(@semantic-release/npm@13.1.5(semantic-release@25.0.3(typescript@5.9.3)))(@types/node@25.3.5)(typescript@5.9.3)(yaml@2.8.2)
+        version: https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/71dc284aa5acbbf277ae5bd64f7a5a3006ac10df(@semantic-release/npm@13.1.5(semantic-release@25.0.3(typescript@5.9.3)))(@types/node@25.3.5)(typescript@5.9.3)(yaml@2.8.2)
       '@microsoft/api-documenter':
         specifier: ^7.29.6
         version: 7.29.6(@types/node@25.3.5)
@@ -594,8 +594,8 @@ packages:
     resolution: {integrity: sha512-0EuH/SOJHb0qmwZWgL1ly78Xg3FMyxSSl6bAsDyrXSssxNHgCpuMCRGA/l49+JfNEIlZF5InqM20YFS3/uhxjA==}
     engines: {node: '>=22.17'}
 
-  '@it-service-npm/semantic-release-preset@https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/aba4bb666ac85ff753679d2eb25c6db8d3302f3f':
-    resolution: {tarball: https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/aba4bb666ac85ff753679d2eb25c6db8d3302f3f}
+  '@it-service-npm/semantic-release-preset@https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/71dc284aa5acbbf277ae5bd64f7a5a3006ac10df':
+    resolution: {tarball: https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/71dc284aa5acbbf277ae5bd64f7a5a3006ac10df}
     version: 1.0.0
     engines: {node: '>=22.0'}
 
@@ -2742,6 +2742,11 @@ packages:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
 
+  pnpm@10.30.3:
+    resolution: {integrity: sha512-yWHR4KLY41TsqlFmuCJRZmi39Ey1vZUSLVkN2Bki9gb1RzttI+xKW+Bef80Y6EiNR9l4u+mBhy8RRdBumnQAFw==}
+    engines: {node: '>=18.12'}
+    hasBin: true
+
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
@@ -4016,7 +4021,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@it-service-npm/semantic-release-preset@https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/aba4bb666ac85ff753679d2eb25c6db8d3302f3f(@semantic-release/npm@13.1.5(semantic-release@25.0.3(typescript@5.9.3)))(@types/node@25.3.5)(typescript@5.9.3)(yaml@2.8.2)':
+  '@it-service-npm/semantic-release-preset@https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/71dc284aa5acbbf277ae5bd64f7a5a3006ac10df(@semantic-release/npm@13.1.5(semantic-release@25.0.3(typescript@5.9.3)))(@types/node@25.3.5)(typescript@5.9.3)(yaml@2.8.2)':
     dependencies:
       '@anolilab/semantic-release-clean-package-json': 5.2.0(yaml@2.8.2)
       '@anolilab/semantic-release-pnpm': 5.0.0(@types/node@25.3.5)(yaml@2.8.2)
@@ -4026,6 +4031,7 @@ snapshots:
       '@semantic-release/git': 10.0.1(semantic-release@25.0.3(typescript@5.9.3))
       '@semantic-release/github': 12.0.6(semantic-release@25.0.3(typescript@5.9.3))
       '@semantic-release/release-notes-generator': 14.1.0(semantic-release@25.0.3(typescript@5.9.3))
+      pnpm: 10.30.3
       semantic-release: 25.0.3(typescript@5.9.3)
     transitivePeerDependencies:
       - '@semantic-release/npm'
@@ -6439,6 +6445,8 @@ snapshots:
       load-json-file: 4.0.0
 
   pluralize@8.0.0: {}
+
+  pnpm@10.30.3: {}
 
   prelude-ls@1.2.1: {}
 
