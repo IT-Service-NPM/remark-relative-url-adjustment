@@ -7,24 +7,26 @@ on:
     branches:
       - main
     paths:
-      - 'src/**'
-      - 'package.json'
-      - 'tsconfig.json'
-      - 'test/**'
-      - 'eslint.config.mjs'
-      - 'api-extractor.json'
-      - 'readme.md'
-      - '.github/workflows/ci.yml'
+      - src/**
+      - package.json
+      - pnpm-lock.yaml
+      - tsconfig.json
+      - test/**
+      - eslint.config.mjs
+      - api-extractor.json
+      - .readme.md
+      - .github/workflows/ci.yml
   push:
     paths:
-      - 'src/**'
-      - 'package.json'
-      - 'tsconfig.json'
-      - 'test/**'
-      - 'eslint.config.mjs'
-      - 'api-extractor.json'
-      - 'readme.md'
-      - '.github/workflows/ci.yml'
+      - src/**
+      - package.json
+      - pnpm-lock.yaml
+      - tsconfig.json
+      - test/**
+      - eslint.config.mjs
+      - api-extractor.json
+      - .readme.md
+      - .github/workflows/ci.yml
 
   workflow_dispatch:
 
