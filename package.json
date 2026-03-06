@@ -66,6 +66,7 @@
 		"@eslint/js": "^10.0.1",
 		"@it-service-npm/remark-gfm-admonition": "^2.0.0",
 		"@it-service-npm/remark-include": "^5.0.1",
+		"@it-service-npm/semantic-release-preset": "github:IT-Service-NPM/semantic-release-preset#main",
 		"@microsoft/api-documenter": "^7.29.6",
 		"@microsoft/api-extractor": "^7.57.6",
 		"@semantic-release/changelog": "^6.0.3",
