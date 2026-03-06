@@ -15,39 +15,22 @@ All notable changes to this project will be documented in this file. See
 
 ## [1.1.1](https://github.com/IT-Service-NPM/remark-relative-url-adjustment/compare/v1.1.0...v1.1.1) (2026-03-06)
 
-
-### Bug Fixes
-
-* optimize for pnpm ([2554105](https://github.com/IT-Service-NPM/remark-relative-url-adjustment/commit/255410524ce2b643764b0c47f8fa3a28b1c62348))
-
-<!-- markdownlint-configure-file
-{
-  "default": true,
-  "line-length": false,
-  "no-duplicate-heading": false,
-  "no-multiple-blanks": false,
-  "heading-increment": false,
-  "single-title": false
-}
--->
-# 📓 Changelog
-
-All notable changes to this project will be documented in this file. See
-[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+* refactored for using with pnpm
+  ([2554105](https://github.com/IT-Service-NPM/remark-relative-url-adjustment/commit/255410524ce2b643764b0c47f8fa3a28b1c62348))
 
 # [1.1.0](https://github.com/IT-Service-NPM/remark-relative-url-adjustment/compare/v1.0.1...v1.1.0) (2026-02-24)
 
-
 ### Features
 
-* the `sourcePath` is now optional ([3f01d06](https://github.com/IT-Service-NPM/remark-relative-url-adjustment/commit/3f01d06a6120b395bf4d8c9e6f5849ae96c84cd7))
+* the `sourcePath` is now optional
+  ([3f01d06](https://github.com/IT-Service-NPM/remark-relative-url-adjustment/commit/3f01d06a6120b395bf4d8c9e6f5849ae96c84cd7))
 
 ## [1.0.1](https://github.com/IT-Service-NPM/remark-relative-url-adjustment/compare/v1.0.0...v1.0.1) (2026-02-24)
 
-
 ### Bug Fixes
 
-* fix keywords in package.json ([19c4f09](https://github.com/IT-Service-NPM/remark-relative-url-adjustment/commit/19c4f0935467d227d7ad6decaed8b5cf6812a759))
+* fix keywords in package.json
+  ([19c4f09](https://github.com/IT-Service-NPM/remark-relative-url-adjustment/commit/19c4f0935467d227d7ad6decaed8b5cf6812a759))
 
 # 1.0.0 (2026-02-24)
 
