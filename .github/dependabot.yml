@@ -19,6 +19,11 @@ updates:
   - package-ecosystem: npm
     target-branch: main
     directory: /
+    groups:
+      eslint:
+        patterns:
+          - "eslint"
+          - "@eslint/*"
     schedule:
       interval: weekly
     commit-message:
