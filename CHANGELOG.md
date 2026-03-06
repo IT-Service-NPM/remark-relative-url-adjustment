@@ -1,5 +1,27 @@
 <!-- markdownlint-configure-file
 {
+  'default': true,
+  'line-length': false,
+  'no-duplicate-heading': false,
+  'no-multiple-blanks': false,
+  'heading-increment': false,
+  'single-title': false
+}
+-->
+# 📓 Changelog
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [1.1.1](https://github.com/IT-Service-NPM/remark-relative-url-adjustment/compare/v1.1.0...v1.1.1) (2026-03-06)
+
+
+### Bug Fixes
+
+* optimize for pnpm ([2554105](https://github.com/IT-Service-NPM/remark-relative-url-adjustment/commit/255410524ce2b643764b0c47f8fa3a28b1c62348))
+
+<!-- markdownlint-configure-file
+{
   "default": true,
   "line-length": false,
   "no-duplicate-heading": false,
