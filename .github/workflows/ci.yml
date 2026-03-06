@@ -90,4 +90,3 @@ jobs:
       - uses: IT-Service-NPM/.github/.github/actions/publish-package@main
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          # NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
