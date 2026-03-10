@@ -33,14 +33,6 @@
 		"noEmitOnError": true,
 		"sourceMap": true,
 		"declaration": true,
-		"declarationMap": true,
-		"paths": {
-			"@it-service-npm/remark-relative-url-adjustment": [
-				"./dist"
-			],
-		},
-		"types": [
-			"node"
-		],
-	},
+		"declarationMap": true
+	}
 }
