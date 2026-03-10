@@ -41,34 +41,13 @@ importers:
         version: 5.0.1
       '@it-service-npm/semantic-release-preset':
         specifier: github:IT-Service-NPM/semantic-release-preset#main
-        version: https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/e7c4e3458350923bdd652af75a57a3ddd7fa6848(@semantic-release/npm@13.1.5(semantic-release@25.0.3(typescript@5.9.3)))(@types/node@25.4.0)(typescript@5.9.3)(yaml@2.8.2)
+        version: https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/e7c4e3458350923bdd652af75a57a3ddd7fa6848(@types/node@25.4.0)(typescript@5.9.3)(yaml@2.8.2)
       '@microsoft/api-documenter':
         specifier: ^7.29.6
         version: 7.29.7(@types/node@25.4.0)
       '@microsoft/api-extractor':
         specifier: ^7.57.6
         version: 7.57.7(@types/node@25.4.0)
-      '@semantic-release/changelog':
-        specifier: ^6.0.3
-        version: 6.0.3(semantic-release@25.0.3(typescript@5.9.3))
-      '@semantic-release/commit-analyzer':
-        specifier: ^13.0.1
-        version: 13.0.1(semantic-release@25.0.3(typescript@5.9.3))
-      '@semantic-release/git':
-        specifier: ^10.0.1
-        version: 10.0.1(semantic-release@25.0.3(typescript@5.9.3))
-      '@semantic-release/github':
-        specifier: ^12.0.6
-        version: 12.0.6(semantic-release@25.0.3(typescript@5.9.3))
-      '@semantic-release/npm':
-        specifier: ^13.1.5
-        version: 13.1.5(semantic-release@25.0.3(typescript@5.9.3))
-      '@semantic-release/release-notes-generator':
-        specifier: ^14.1.0
-        version: 14.1.0(semantic-release@25.0.3(typescript@5.9.3))
-      '@szum-tech/semantic-release-config':
-        specifier: ^2.3.7
-        version: 2.3.7(semantic-release@25.0.3(typescript@5.9.3))
       '@types/mdast':
         specifier: ^4.0.4
         version: 4.0.4
@@ -144,9 +123,6 @@ importers:
       remark-validate-links:
         specifier: ^13.1.0
         version: 13.1.0
-      semantic-release:
-        specifier: ^25.0.3
-        version: 25.0.3(typescript@5.9.3)
       to-vfile:
         specifier: ^8.0.0
         version: 8.0.0
@@ -971,11 +947,6 @@ packages:
     resolution: {integrity: sha512-2KmDUfqIv0g4lrWtnyR5xw82NvdsEwUHON43JAe55XRlLWnk1V1troiyJiM9fccENtl524kVRBnD7RMohmUyyQ==}
     engines: {node: '>=0.10.0', npm: '>2.7.0'}
     os: [aix, darwin, freebsd, linux, macos, openbsd, sunos, win32, windows]
-
-  '@szum-tech/semantic-release-config@2.3.7':
-    resolution: {integrity: sha512-RYrNnbHhc2ApF9WpCRcLrVNnFFnuFfLD61VYeihrX7Bz/jZOoiQmxsJ7L7aj4eEWEQamgLq/stdXo8H0ZkYLTA==}
-    peerDependencies:
-      semantic-release: '>=25'
 
   '@types/argparse@1.0.38':
     resolution: {integrity: sha512-ebDJ9b0e702Yr7pWgB0jzm+CX4Srzz8RcXtLJDJB+BSccqMa36uyH/zUsSYao5+BD1ytv3k3rPYCq4mAE1hsXA==}
@@ -3678,7 +3649,7 @@ snapshots:
       - supports-color
       - yaml
 
-  '@anolilab/semantic-release-preset@13.1.1(@anolilab/semantic-release-pnpm@5.0.0(@types/node@25.4.0)(yaml@2.8.2))(@semantic-release/npm@13.1.5(semantic-release@25.0.3(typescript@5.9.3)))(semantic-release@25.0.3(typescript@5.9.3))(yaml@2.8.2)':
+  '@anolilab/semantic-release-preset@13.1.1(@anolilab/semantic-release-pnpm@5.0.0(@types/node@25.4.0)(yaml@2.8.2))(semantic-release@25.0.3(typescript@5.9.3))(yaml@2.8.2)':
     dependencies:
       '@anolilab/semantic-release-clean-package-json': 5.2.0(yaml@2.8.2)
       '@semantic-release/changelog': 6.0.3(semantic-release@25.0.3(typescript@5.9.3))
@@ -3691,7 +3662,6 @@ snapshots:
       semantic-release: 25.0.3(typescript@5.9.3)
     optionalDependencies:
       '@anolilab/semantic-release-pnpm': 5.0.0(@types/node@25.4.0)(yaml@2.8.2)
-      '@semantic-release/npm': 13.1.5(semantic-release@25.0.3(typescript@5.9.3))
     transitivePeerDependencies:
       - supports-color
       - yaml
@@ -4053,11 +4023,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@it-service-npm/semantic-release-preset@https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/e7c4e3458350923bdd652af75a57a3ddd7fa6848(@semantic-release/npm@13.1.5(semantic-release@25.0.3(typescript@5.9.3)))(@types/node@25.4.0)(typescript@5.9.3)(yaml@2.8.2)':
+  '@it-service-npm/semantic-release-preset@https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/e7c4e3458350923bdd652af75a57a3ddd7fa6848(@types/node@25.4.0)(typescript@5.9.3)(yaml@2.8.2)':
     dependencies:
       '@anolilab/semantic-release-clean-package-json': 5.2.0(yaml@2.8.2)
       '@anolilab/semantic-release-pnpm': 5.0.0(@types/node@25.4.0)(yaml@2.8.2)
-      '@anolilab/semantic-release-preset': 13.1.1(@anolilab/semantic-release-pnpm@5.0.0(@types/node@25.4.0)(yaml@2.8.2))(@semantic-release/npm@13.1.5(semantic-release@25.0.3(typescript@5.9.3)))(semantic-release@25.0.3(typescript@5.9.3))(yaml@2.8.2)
+      '@anolilab/semantic-release-preset': 13.1.1(@anolilab/semantic-release-pnpm@5.0.0(@types/node@25.4.0)(yaml@2.8.2))(semantic-release@25.0.3(typescript@5.9.3))(yaml@2.8.2)
       '@semantic-release/changelog': 6.0.3(semantic-release@25.0.3(typescript@5.9.3))
       '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.3(typescript@5.9.3))
       '@semantic-release/git': 10.0.1(semantic-release@25.0.3(typescript@5.9.3))
@@ -4570,19 +4540,6 @@ snapshots:
     dependencies:
       '@stdlib/utils-constructor-name': 0.2.3
       '@stdlib/utils-global': 0.2.3
-
-  '@szum-tech/semantic-release-config@2.3.7(semantic-release@25.0.3(typescript@5.9.3))':
-    dependencies:
-      '@semantic-release/changelog': 6.0.3(semantic-release@25.0.3(typescript@5.9.3))
-      '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.3(typescript@5.9.3))
-      '@semantic-release/git': 10.0.1(semantic-release@25.0.3(typescript@5.9.3))
-      '@semantic-release/github': 12.0.6(semantic-release@25.0.3(typescript@5.9.3))
-      '@semantic-release/npm': 13.1.5(semantic-release@25.0.3(typescript@5.9.3))
-      '@semantic-release/release-notes-generator': 14.1.0(semantic-release@25.0.3(typescript@5.9.3))
-      conventional-changelog-conventionalcommits: 9.3.0
-      semantic-release: 25.0.3(typescript@5.9.3)
-    transitivePeerDependencies:
-      - supports-color
 
   '@types/argparse@1.0.38': {}
 
