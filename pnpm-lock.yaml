@@ -37,8 +37,8 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0
       '@it-service-npm/remark-include':
-        specifier: ^5.0.1
-        version: 5.0.1
+        specifier: ^6.0.5
+        version: 6.0.5
       '@it-service-npm/semantic-release-preset':
         specifier: github:IT-Service-NPM/semantic-release-preset#main
         version: https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/e7c4e3458350923bdd652af75a57a3ddd7fa6848(@types/node@25.6.0)(typescript@5.9.3)(yaml@2.8.2)
@@ -550,24 +550,24 @@ packages:
     resolution: {integrity: sha512-9wRSwjtbXrumLv4iHzNJAoXJPHCNJCD04DuKZhFU7/XuRMUkpJk3TUD301Khl70vmm3X0ek9/ZLDcEkZGmviJA==}
     engines: {node: '>=22.0'}
 
-  '@it-service-npm/remark-code-path-adjustment@1.0.1':
-    resolution: {integrity: sha512-i9odhlKcY/zoFt2QuRxwSFnreC2oMoBCKmldQQhgxXU5wiYtE70uBsAvjNrZ0Q+8yhYGHDNR6GTmN5DCEcoY3w==}
+  '@it-service-npm/remark-code-path-adjustment@1.0.2':
+    resolution: {integrity: sha512-JGwEoAb5APJ/9NLrtvdI6+MjeDxoAO0V3oNhi+rW8s+wLjSQWJ3mFQriGxnol9kZSfeIThGRt+HSt8+nm5u6qA==}
     engines: {node: '>=22.17'}
 
   '@it-service-npm/remark-gfm-admonition@2.0.0':
     resolution: {integrity: sha512-FHE7pEc8pbHzImm4yVUrf2c1Jl3griJZTeh8WcYWYvED60I5nSoBhirYf/SRr+IMHJpECIIY2XWyX+LBXG3w6A==}
     engines: {node: '>=22.0'}
 
-  '@it-service-npm/remark-heading-adjustment@1.2.0':
-    resolution: {integrity: sha512-LDFO8WReZ6dY7ALOOXXO++XYAItT6yN2uhGPx9sZRfVgLRRpUG+YVPgRPReKNbvY4sysDtNE27saR0aKvCs/RA==}
+  '@it-service-npm/remark-heading-adjustment@1.2.3':
+    resolution: {integrity: sha512-tnTRxi+FLquisQR/SoIoBjoP1Z/yHOeGD8p+CMk5IzNb4iSt5kEW+EN4YY8DxT+mDe32z5GYYymoLra2ofSTBw==}
     engines: {node: '>=22.17'}
 
-  '@it-service-npm/remark-include@5.0.1':
-    resolution: {integrity: sha512-4gxXH9B5gcjHzl8bmBvb4F8sUu33uIAhkdkBEz2CooUXzuUnBZjkVZ7qF/z9cQtck3tKN1baMpAQWE6O5TzlhQ==}
+  '@it-service-npm/remark-include@6.0.5':
+    resolution: {integrity: sha512-KiC1Y8lVn1n9MwCEgxBeGR2hJJeytTWKCHYjQsWekjKiqg7WcRfCj+jgpG2wgjmX4bbdeyTYubGhtEbwTpYMLQ==}
     engines: {node: '>=22.17'}
 
-  '@it-service-npm/remark-relative-url-adjustment@1.1.0':
-    resolution: {integrity: sha512-0EuH/SOJHb0qmwZWgL1ly78Xg3FMyxSSl6bAsDyrXSssxNHgCpuMCRGA/l49+JfNEIlZF5InqM20YFS3/uhxjA==}
+  '@it-service-npm/remark-relative-url-adjustment@1.1.1':
+    resolution: {integrity: sha512-Ib0c/F4vUTa4NvoQCsl7GBIMBGJrXvxWA+ex95UXQckLzcpxIXF2lw2xpunOY9sviZX7FGDI/HBPslCMg0pA0w==}
     engines: {node: '>=22.17'}
 
   '@it-service-npm/semantic-release-preset@https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/e7c4e3458350923bdd652af75a57a3ddd7fa6848':
@@ -4020,7 +4020,7 @@ snapshots:
       micromark-util-character: 2.1.1
       micromark-util-symbol: 2.0.1
 
-  '@it-service-npm/remark-code-path-adjustment@1.0.1':
+  '@it-service-npm/remark-code-path-adjustment@1.0.2':
     dependencies:
       '@stdlib/utils-convert-path': 0.2.3
       remark: 15.0.1
@@ -4037,18 +4037,18 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@it-service-npm/remark-heading-adjustment@1.2.0':
+  '@it-service-npm/remark-heading-adjustment@1.2.3':
     dependencies:
       remark: 15.0.1
       unist-util-visit: 5.1.0
     transitivePeerDependencies:
       - supports-color
 
-  '@it-service-npm/remark-include@5.0.1':
+  '@it-service-npm/remark-include@6.0.5':
     dependencies:
-      '@it-service-npm/remark-code-path-adjustment': 1.0.1
-      '@it-service-npm/remark-heading-adjustment': 1.2.0
-      '@it-service-npm/remark-relative-url-adjustment': 1.1.0
+      '@it-service-npm/remark-code-path-adjustment': 1.0.2
+      '@it-service-npm/remark-heading-adjustment': 1.2.3
+      '@it-service-npm/remark-relative-url-adjustment': 1.1.1
       remark-directive: 4.0.0
       to-vfile: 8.0.0
       unist-util-visit: 5.1.0
@@ -4056,7 +4056,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@it-service-npm/remark-relative-url-adjustment@1.1.0':
+  '@it-service-npm/remark-relative-url-adjustment@1.1.1':
     dependencies:
       relateurl: 0.2.7
       remark: 15.0.1
