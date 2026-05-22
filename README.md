@@ -65,13 +65,11 @@ to ensure they are accurate.
 
 ## Contents
 
-- [@it-service-npm/remark-relative-url-adjustment Remark plugin](#it-service-npmremark-relative-url-adjustment-remark-plugin)
-  - [Contents](#contents)
-  - [Install](#install)
-  - [Examples](#examples)
-    - [Updating relative url for links, images](#updating-relative-url-for-linksimages)
-  - [API](#api)
-  - [License](#license)
+- [Install](#install)
+- [Examples](#examples)
+  - [Updating relative url for links, images](#updating-relative-url-for-linksimages)
+- [API](#api)
+- [License](#license)
 
 ## Install
 
@@ -91,7 +89,7 @@ this plugin adjusts all relative URLs
 for images, definitions, and links
 to ensure they are accurate.
 
-```typescript file=test/examples/01/example.ts
+```typescript
 import { remark } from 'remark';
 import * as vFile from 'to-vfile';
 import {
@@ -112,14 +110,13 @@ export async function remarkDirectiveUsingExample(
     .use(remarkRelativeUrlsAdjustment)
     .process(await vFile.read(filePath));
 };
-
 ```
 
 Source file:
 
 main.md:
 
-```markdown file=test/examples/01/fixtures/subfolder1/main.md
+```markdown
 Hello. I am the included. Test image:
 
 ![Test local image](test-image.png)
@@ -127,12 +124,11 @@ Hello. I am the included. Test image:
 ![Test local image with space](test%20image.png)
 
 ![Test web image](https://img.shields.io/badge/github-repo-blue?logo=github)
-
 ```
 
 Remark output:
 
-```markdown file=test/examples/01/fixtures/output.md
+```markdown
 Hello. I am the included. Test image:
 
 ![Test local image](subfolder1/test-image.png)
@@ -140,7 +136,6 @@ Hello. I am the included. Test image:
 ![Test local image with space](subfolder1/test%20image.png)
 
 ![Test web image](https://img.shields.io/badge/github-repo-blue?logo=github)
-
 ```
 
 ## API

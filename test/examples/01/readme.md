@@ -8,7 +8,7 @@ this plugin adjusts all relative URLs
 for images, definitions, and links
 to ensure they are accurate.
 
-```typescript file=./example.ts
+```typescript
 import { remark } from 'remark';
 import * as vFile from 'to-vfile';
 import {
@@ -35,7 +35,7 @@ Source file:
 
 main.md:
 
-```markdown file=fixtures/subfolder1/main.md
+```markdown
 Hello. I am the included. Test image:
 
 ![Test local image](test-image.png)
@@ -47,7 +47,7 @@ Hello. I am the included. Test image:
 
 Remark output:
 
-```markdown file=fixtures/output.md
+```markdown
 Hello. I am the included. Test image:
 
 ![Test local image](subfolder1/test-image.png)

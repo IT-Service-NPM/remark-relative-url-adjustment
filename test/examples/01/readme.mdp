@@ -1,0 +1,21 @@
+# Updating relative url for links, images
+
+Images and links within the markdown file will have
+their paths adjusted to be relative to the new document location.
+
+When `processor.data().filePathChanges` is set,
+this plugin adjusts all relative URLs
+for images, definitions, and links
+to ensure they are accurate.
+
+::include-code{file=./example.ts language=typescript}
+
+Source file:
+
+main.md:
+
+::include-code{file=fixtures/subfolder1/main.md language=markdown}
+
+Remark output:
+
+::include-code{file=fixtures/output.md language=markdown}

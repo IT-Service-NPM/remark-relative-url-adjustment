@@ -14,7 +14,6 @@ await test('plugin updates relative url for images',
     );
   });
 
-// eslint-disable-next-line max-len
 await test('plugin leaves links (URLs) starting with `/` (relative to the repository root)',
   async (t) => {
     const outputFile = await remarkDirectiveUsingExample(path.resolve(
