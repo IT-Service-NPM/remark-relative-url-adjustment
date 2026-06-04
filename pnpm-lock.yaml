@@ -44,7 +44,7 @@ importers:
         version: 6.0.6
       '@it-service-npm/remark-include-code':
         specifier: ^2.3.3
-        version: 2.3.3
+        version: 2.3.4
       '@it-service-npm/semantic-release-preset':
         specifier: github:IT-Service-NPM/semantic-release-preset#main
         version: https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/e7c4e3458350923bdd652af75a57a3ddd7fa6848(@semantic-release/npm@13.1.5(semantic-release@25.0.3(typescript@6.0.3)))(@types/node@25.9.1)(typescript@6.0.3)(yaml@2.9.0)
@@ -587,8 +587,8 @@ packages:
     resolution: {integrity: sha512-2kNrNZKTtkSqIzuwHYxTIGZiNxib1tS5YpA548Oab8TbBJBY+wBv+uacJetlWOPt7p2xVqRm5v3A1RBH4fgzpw==}
     engines: {node: '>=22.17'}
 
-  '@it-service-npm/remark-include-code@2.3.3':
-    resolution: {integrity: sha512-Y7ifaQlPiPVlYRhkBfRaByIPeGi5MpQ60PE3brlpo7gsTVF9jOsX2f5dCzL5F728lnF/lSbYFWArolGL8A6J9A==}
+  '@it-service-npm/remark-include-code@2.3.4':
+    resolution: {integrity: sha512-epAwjVa1HguFjcEWzqFWSHTv1rPpHDKa0o1yKtYFLf2z4i4C1AyC8fLVeTwxdViOR33k4G17kvBC/wmcxBrwAw==}
     engines: {node: '>=22.17'}
 
   '@it-service-npm/remark-include@6.0.6':
@@ -4095,7 +4095,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@it-service-npm/remark-include-code@2.3.3':
+  '@it-service-npm/remark-include-code@2.3.4':
     dependencies:
       editorconfig: 3.0.2
       iconv-lite: 0.7.2
