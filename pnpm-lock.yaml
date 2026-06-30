@@ -44,7 +44,7 @@ importers:
         version: 6.0.7
       '@it-service-npm/remark-include-code':
         specifier: ^2.3.4
-        version: 2.3.4
+        version: 2.3.8
       '@it-service-npm/semantic-release-preset':
         specifier: github:IT-Service-NPM/semantic-release-preset#main
         version: https://codeload.github.com/IT-Service-NPM/semantic-release-preset/tar.gz/e7c4e3458350923bdd652af75a57a3ddd7fa6848(@semantic-release/npm@13.1.5(semantic-release@25.0.3(typescript@6.0.3)))(@types/node@25.9.1)(typescript@6.0.3)(yaml@2.9.0)
@@ -587,9 +587,9 @@ packages:
     resolution: {integrity: sha512-2kNrNZKTtkSqIzuwHYxTIGZiNxib1tS5YpA548Oab8TbBJBY+wBv+uacJetlWOPt7p2xVqRm5v3A1RBH4fgzpw==}
     engines: {node: '>=22.17'}
 
-  '@it-service-npm/remark-include-code@2.3.4':
-    resolution: {integrity: sha512-epAwjVa1HguFjcEWzqFWSHTv1rPpHDKa0o1yKtYFLf2z4i4C1AyC8fLVeTwxdViOR33k4G17kvBC/wmcxBrwAw==}
-    engines: {node: '>=22.17'}
+  '@it-service-npm/remark-include-code@2.3.8':
+    resolution: {integrity: sha512-Kio1ox7fuyZ2LcuWG0z9PsKaBEuexlynbu1hcAxZp9C14/VWbCt8ZYgCudU8AZ1UD52IJoEzoCY+0GTyZjOMpg==}
+    engines: {runtime: {name: node, version: ^26.3.0, onFail: download}}
 
   '@it-service-npm/remark-include@6.0.7':
     resolution: {integrity: sha512-7hIDdb07SZ2ZRfnxrHz9spQRJEwwTaasuu/2tz0AmnEgIOquQpeuZ7MGHWwj3suS7/0P2qr+1jvW2ounVkl76A==}
@@ -1877,6 +1877,7 @@ packages:
   git-raw-commits@5.0.1:
     resolution: {integrity: sha512-Y+csSm2GD/PCSh6Isd/WiMjNAydu0VBiG9J7EdQsNA5P9uXvLayqjmTsNlK5Gs9IhblFZqOU0yid5Il5JPoLiQ==}
     engines: {node: '>=18'}
+    deprecated: Deprecated and no longer maintained. Use @conventional-changelog/git-client instead.
     hasBin: true
 
   github-slugger@2.0.0:
@@ -2512,6 +2513,127 @@ packages:
     resolution: {integrity: sha512-Uzmd6LXpouKo8EUK68IjH4+E01w/hXyV3R3g/geCJo+rXLNfh1xucB+LOzYEOQPSiUK3h/xZf0cQGcSsmyL2Og==}
     engines: {node: '>=18'}
 
+  node@runtime:26.4.0:
+    resolution:
+      type: variations
+      variants:
+        - resolution:
+            archive: tarball
+            bin:
+              node: bin/node
+            integrity: sha256-YCabfi8hTrVGvdyXbUDbpij2PuRASI68JZSr/AaHMlg=
+            type: binary
+            url: https://nodejs.org/download/release/v26.4.0/node-v26.4.0-aix-ppc64.tar.gz
+          targets:
+            - cpu: ppc64
+              os: aix
+        - resolution:
+            archive: tarball
+            bin:
+              node: bin/node
+            integrity: sha256-T0+8rPax/xqV3u26e9ey157+yqU6jssFMFRtyQY/77w=
+            type: binary
+            url: https://nodejs.org/download/release/v26.4.0/node-v26.4.0-darwin-arm64.tar.gz
+          targets:
+            - cpu: arm64
+              os: darwin
+        - resolution:
+            archive: tarball
+            bin:
+              node: bin/node
+            integrity: sha256-6zvdjew/8lWO4Q4oTafSo4Za8MvaIfBtOXsCZYN8ZB4=
+            type: binary
+            url: https://nodejs.org/download/release/v26.4.0/node-v26.4.0-darwin-x64.tar.gz
+          targets:
+            - cpu: x64
+              os: darwin
+        - resolution:
+            archive: tarball
+            bin:
+              node: bin/node
+            integrity: sha256-dz2exnJmg4Jw3cEFwlSK6Kr/KLyP5vNMVdEJQEPEFl4=
+            type: binary
+            url: https://nodejs.org/download/release/v26.4.0/node-v26.4.0-linux-arm64.tar.gz
+          targets:
+            - cpu: arm64
+              os: linux
+        - resolution:
+            archive: tarball
+            bin:
+              node: bin/node
+            integrity: sha256-1VA2YFj7KareEY/gVS8vrcaU2p6mOq30pz1qUjOY4Tk=
+            type: binary
+            url: https://nodejs.org/download/release/v26.4.0/node-v26.4.0-linux-ppc64le.tar.gz
+          targets:
+            - cpu: ppc64le
+              os: linux
+        - resolution:
+            archive: tarball
+            bin:
+              node: bin/node
+            integrity: sha256-cOvQM8UPkIO+U9igWDwhUEnGMhIIeDXacZw8BszkEXs=
+            type: binary
+            url: https://nodejs.org/download/release/v26.4.0/node-v26.4.0-linux-s390x.tar.gz
+          targets:
+            - cpu: s390x
+              os: linux
+        - resolution:
+            archive: tarball
+            bin:
+              node: bin/node
+            integrity: sha256-8iHasw0OnVRDMvBvvuLGIYbJfYZNXKyEgtujTx44uNw=
+            type: binary
+            url: https://nodejs.org/download/release/v26.4.0/node-v26.4.0-linux-x64.tar.gz
+          targets:
+            - cpu: x64
+              os: linux
+        - resolution:
+            archive: zip
+            bin:
+              node: node.exe
+            integrity: sha256-OUy3LmZPqqUYyhh3vMILsDo+L1HtH2z85T4aMG6Ml/Y=
+            prefix: node-v26.4.0-win-arm64
+            type: binary
+            url: https://nodejs.org/download/release/v26.4.0/node-v26.4.0-win-arm64.zip
+          targets:
+            - cpu: arm64
+              os: win32
+        - resolution:
+            archive: zip
+            bin:
+              node: node.exe
+            integrity: sha256-X4fQOMbsRCqka5Em+MoXCsvS87m5FSynmM9UWWox4hQ=
+            prefix: node-v26.4.0-win-x64
+            type: binary
+            url: https://nodejs.org/download/release/v26.4.0/node-v26.4.0-win-x64.zip
+          targets:
+            - cpu: x64
+              os: win32
+        - resolution:
+            archive: tarball
+            bin:
+              node: bin/node
+            integrity: sha256-0q2Mbp+pVe3wM3B4wdGs2jRdNqhJhrIYzOPP0dLSaSA=
+            type: binary
+            url: https://unofficial-builds.nodejs.org/download/release/v26.4.0/node-v26.4.0-linux-arm64-musl.tar.gz
+          targets:
+            - cpu: arm64
+              os: linux
+              libc: musl
+        - resolution:
+            archive: tarball
+            bin:
+              node: bin/node
+            integrity: sha256-VU6WD2VwvT0Zh/UXDY8qNzohgYWBqNMHtpfng5mIMUo=
+            type: binary
+            url: https://unofficial-builds.nodejs.org/download/release/v26.4.0/node-v26.4.0-linux-x64-musl.tar.gz
+          targets:
+            - cpu: x64
+              os: linux
+              libc: musl
+    version: 26.4.0
+    hasBin: true
+
   nopt@7.2.1:
     resolution: {integrity: sha512-taM24ViiimT/XntxbPyJQzCG+p4EKOpgD3mxFwW38mGjVUrfERQOeY4EDHjdnptttfHuHQXFx+lTP08Q+mLa/w==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
@@ -3095,6 +3217,11 @@ packages:
 
   semver@7.8.2:
     resolution: {integrity: sha512-c8jsqUZm3omBOI66G90z1Dyw5z622G8oLG+omfsHBJf3CWQTlOcwOjvOG6wtiNfW6anKm/eA39LMwMtMez2TiQ==}
+    engines: {node: '>=10'}
+    hasBin: true
+
+  semver@7.8.5:
+    resolution: {integrity: sha512-Y7/KDsb8LjooZpwaqGyulO6DQlksgCncchHGk+sZIY4SBvUocMBEFH5Ur1fI4dV+Jvl0w6cjvucaIi40puRioA==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -4056,10 +4183,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@it-service-npm/remark-include-code@2.3.4':
+  '@it-service-npm/remark-include-code@2.3.8':
     dependencies:
       editorconfig: 3.0.2
       iconv-lite: 0.7.2
+      node: runtime:26.4.0
       remark-directive: 4.0.0
       unist-util-visit: 5.1.0
       vfile-message: 4.0.3
@@ -4160,7 +4288,7 @@ snapshots:
       ini: 4.1.3
       nopt: 7.2.1
       proc-log: 4.2.0
-      semver: 7.8.2
+      semver: 7.8.5
       walk-up-path: 3.0.1
     transitivePeerDependencies:
       - bluebird
@@ -4174,7 +4302,7 @@ snapshots:
       proc-log: 4.2.0
       promise-inflight: 1.0.1
       promise-retry: 2.0.1
-      semver: 7.8.2
+      semver: 7.8.5
       which: 4.0.0
     transitivePeerDependencies:
       - bluebird
@@ -4196,7 +4324,7 @@ snapshots:
       json-parse-even-better-errors: 3.0.2
       normalize-package-data: 6.0.2
       proc-log: 4.2.0
-      semver: 7.8.2
+      semver: 7.8.5
     transitivePeerDependencies:
       - bluebird
 
@@ -4738,7 +4866,7 @@ snapshots:
       '@typescript-eslint/visitor-keys': 8.56.1
       debug: 4.4.3
       minimatch: 10.2.5
-      semver: 7.8.2
+      semver: 7.8.5
       tinyglobby: 0.2.17
       ts-api-utils: 2.5.0(typescript@6.0.3)
       typescript: 6.0.3
@@ -5183,7 +5311,7 @@ snapshots:
       '@one-ini/wasm': 0.2.1
       commander: 14.0.3
       minimatch: 10.2.5
-      semver: 7.8.2
+      semver: 7.8.5
 
   electron-to-chromium@1.5.367: {}
 
@@ -6358,6 +6486,8 @@ snapshots:
 
   node-releases@2.0.47: {}
 
+  node@runtime:26.4.0: {}
+
   nopt@7.2.1:
     dependencies:
       abbrev: 2.0.0
@@ -6365,7 +6495,7 @@ snapshots:
   normalize-package-data@6.0.2:
     dependencies:
       hosted-git-info: 7.0.2
-      semver: 7.8.2
+      semver: 7.8.5
       validate-npm-package-license: 3.0.4
 
   normalize-package-data@7.0.1:
@@ -6388,7 +6518,7 @@ snapshots:
 
   npm-install-checks@6.3.0:
     dependencies:
-      semver: 7.8.2
+      semver: 7.8.5
 
   npm-normalize-package-bin@3.0.1: {}
 
@@ -6396,7 +6526,7 @@ snapshots:
     dependencies:
       hosted-git-info: 7.0.2
       proc-log: 4.2.0
-      semver: 7.8.2
+      semver: 7.8.5
       validate-npm-package-name: 5.0.1
 
   npm-pick-manifest@9.1.0:
@@ -6404,7 +6534,7 @@ snapshots:
       npm-install-checks: 6.3.0
       npm-normalize-package-bin: 3.0.1
       npm-package-arg: 11.0.3
-      semver: 7.8.2
+      semver: 7.8.5
 
   npm-run-path@4.0.1:
     dependencies:
@@ -7134,6 +7264,8 @@ snapshots:
   semver@7.7.4: {}
 
   semver@7.8.2: {}
+
+  semver@7.8.5: {}
 
   shebang-command@2.0.0:
     dependencies:
