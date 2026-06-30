@@ -41,7 +41,7 @@ importers:
         version: 1.2.4
       '@it-service-npm/remark-include':
         specifier: ^6.0.7
-        version: 6.0.7
+        version: 6.0.11
       '@it-service-npm/remark-include-code':
         specifier: ^2.3.4
         version: 2.3.4
@@ -591,9 +591,9 @@ packages:
     resolution: {integrity: sha512-epAwjVa1HguFjcEWzqFWSHTv1rPpHDKa0o1yKtYFLf2z4i4C1AyC8fLVeTwxdViOR33k4G17kvBC/wmcxBrwAw==}
     engines: {node: '>=22.17'}
 
-  '@it-service-npm/remark-include@6.0.7':
-    resolution: {integrity: sha512-7hIDdb07SZ2ZRfnxrHz9spQRJEwwTaasuu/2tz0AmnEgIOquQpeuZ7MGHWwj3suS7/0P2qr+1jvW2ounVkl76A==}
-    engines: {node: '>=22.17'}
+  '@it-service-npm/remark-include@6.0.11':
+    resolution: {integrity: sha512-3FUCvB1acxqJsvoBTFIMCwdmx4o4J1NzArfHOB5a1XawVYAhyzmi0cBr311vWv0q6uFmDA6s0iD4HHYeL8N2vw==}
+    engines: {runtime: {name: node, version: '>=24', onFail: download}}
 
   '@it-service-npm/remark-relative-url-adjustment@1.1.1':
     resolution: {integrity: sha512-Ib0c/F4vUTa4NvoQCsl7GBIMBGJrXvxWA+ex95UXQckLzcpxIXF2lw2xpunOY9sviZX7FGDI/HBPslCMg0pA0w==}
@@ -1877,6 +1877,7 @@ packages:
   git-raw-commits@5.0.1:
     resolution: {integrity: sha512-Y+csSm2GD/PCSh6Isd/WiMjNAydu0VBiG9J7EdQsNA5P9uXvLayqjmTsNlK5Gs9IhblFZqOU0yid5Il5JPoLiQ==}
     engines: {node: '>=18'}
+    deprecated: Deprecated and no longer maintained. Use @conventional-changelog/git-client instead.
     hasBin: true
 
   github-slugger@2.0.0:
@@ -2511,6 +2512,127 @@ packages:
   node-releases@2.0.47:
     resolution: {integrity: sha512-Uzmd6LXpouKo8EUK68IjH4+E01w/hXyV3R3g/geCJo+rXLNfh1xucB+LOzYEOQPSiUK3h/xZf0cQGcSsmyL2Og==}
     engines: {node: '>=18'}
+
+  node@runtime:26.4.0:
+    resolution:
+      type: variations
+      variants:
+        - resolution:
+            archive: tarball
+            bin:
+              node: bin/node
+            integrity: sha256-YCabfi8hTrVGvdyXbUDbpij2PuRASI68JZSr/AaHMlg=
+            type: binary
+            url: https://nodejs.org/download/release/v26.4.0/node-v26.4.0-aix-ppc64.tar.gz
+          targets:
+            - cpu: ppc64
+              os: aix
+        - resolution:
+            archive: tarball
+            bin:
+              node: bin/node
+            integrity: sha256-T0+8rPax/xqV3u26e9ey157+yqU6jssFMFRtyQY/77w=
+            type: binary
+            url: https://nodejs.org/download/release/v26.4.0/node-v26.4.0-darwin-arm64.tar.gz
+          targets:
+            - cpu: arm64
+              os: darwin
+        - resolution:
+            archive: tarball
+            bin:
+              node: bin/node
+            integrity: sha256-6zvdjew/8lWO4Q4oTafSo4Za8MvaIfBtOXsCZYN8ZB4=
+            type: binary
+            url: https://nodejs.org/download/release/v26.4.0/node-v26.4.0-darwin-x64.tar.gz
+          targets:
+            - cpu: x64
+              os: darwin
+        - resolution:
+            archive: tarball
+            bin:
+              node: bin/node
+            integrity: sha256-dz2exnJmg4Jw3cEFwlSK6Kr/KLyP5vNMVdEJQEPEFl4=
+            type: binary
+            url: https://nodejs.org/download/release/v26.4.0/node-v26.4.0-linux-arm64.tar.gz
+          targets:
+            - cpu: arm64
+              os: linux
+        - resolution:
+            archive: tarball
+            bin:
+              node: bin/node
+            integrity: sha256-1VA2YFj7KareEY/gVS8vrcaU2p6mOq30pz1qUjOY4Tk=
+            type: binary
+            url: https://nodejs.org/download/release/v26.4.0/node-v26.4.0-linux-ppc64le.tar.gz
+          targets:
+            - cpu: ppc64le
+              os: linux
+        - resolution:
+            archive: tarball
+            bin:
+              node: bin/node
+            integrity: sha256-cOvQM8UPkIO+U9igWDwhUEnGMhIIeDXacZw8BszkEXs=
+            type: binary
+            url: https://nodejs.org/download/release/v26.4.0/node-v26.4.0-linux-s390x.tar.gz
+          targets:
+            - cpu: s390x
+              os: linux
+        - resolution:
+            archive: tarball
+            bin:
+              node: bin/node
+            integrity: sha256-8iHasw0OnVRDMvBvvuLGIYbJfYZNXKyEgtujTx44uNw=
+            type: binary
+            url: https://nodejs.org/download/release/v26.4.0/node-v26.4.0-linux-x64.tar.gz
+          targets:
+            - cpu: x64
+              os: linux
+        - resolution:
+            archive: zip
+            bin:
+              node: node.exe
+            integrity: sha256-OUy3LmZPqqUYyhh3vMILsDo+L1HtH2z85T4aMG6Ml/Y=
+            prefix: node-v26.4.0-win-arm64
+            type: binary
+            url: https://nodejs.org/download/release/v26.4.0/node-v26.4.0-win-arm64.zip
+          targets:
+            - cpu: arm64
+              os: win32
+        - resolution:
+            archive: zip
+            bin:
+              node: node.exe
+            integrity: sha256-X4fQOMbsRCqka5Em+MoXCsvS87m5FSynmM9UWWox4hQ=
+            prefix: node-v26.4.0-win-x64
+            type: binary
+            url: https://nodejs.org/download/release/v26.4.0/node-v26.4.0-win-x64.zip
+          targets:
+            - cpu: x64
+              os: win32
+        - resolution:
+            archive: tarball
+            bin:
+              node: bin/node
+            integrity: sha256-0q2Mbp+pVe3wM3B4wdGs2jRdNqhJhrIYzOPP0dLSaSA=
+            type: binary
+            url: https://unofficial-builds.nodejs.org/download/release/v26.4.0/node-v26.4.0-linux-arm64-musl.tar.gz
+          targets:
+            - cpu: arm64
+              os: linux
+              libc: musl
+        - resolution:
+            archive: tarball
+            bin:
+              node: bin/node
+            integrity: sha256-VU6WD2VwvT0Zh/UXDY8qNzohgYWBqNMHtpfng5mIMUo=
+            type: binary
+            url: https://unofficial-builds.nodejs.org/download/release/v26.4.0/node-v26.4.0-linux-x64-musl.tar.gz
+          targets:
+            - cpu: x64
+              os: linux
+              libc: musl
+    version: 26.4.0
+    hasBin: true
 
   nopt@7.2.1:
     resolution: {integrity: sha512-taM24ViiimT/XntxbPyJQzCG+p4EKOpgD3mxFwW38mGjVUrfERQOeY4EDHjdnptttfHuHQXFx+lTP08Q+mLa/w==}
@@ -4066,11 +4188,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@it-service-npm/remark-include@6.0.7':
+  '@it-service-npm/remark-include@6.0.11':
     dependencies:
       '@it-service-npm/remark-code-path-adjustment': 1.0.2
       '@it-service-npm/remark-heading-adjustment': 1.2.4
       '@it-service-npm/remark-relative-url-adjustment': 1.1.1
+      node: runtime:26.4.0
       remark-directive: 4.0.0
       to-vfile: 8.0.0
       unist-util-visit: 5.1.0
@@ -6357,6 +6480,8 @@ snapshots:
       skin-tone: 2.0.0
 
   node-releases@2.0.47: {}
+
+  node@runtime:26.4.0: {}
 
   nopt@7.2.1:
     dependencies:
