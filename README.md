@@ -58,7 +58,7 @@ ensuring links remain accurate even after file relocations or inclusions.
 Images and links within the markdown file will have
 their paths adjusted to be relative to the new document location.
 
-When `processor.data().filePathChanges` is set,
+When `processor.data().filePathChanges` is set,
 this plugin adjusts all relative URLs
 for images, definitions, and links
 to ensure they are accurate.
@@ -84,7 +84,7 @@ npm install --save-dev @it-service-npm/remark-relative-url-adjustment
 Images and links within the markdown file will have
 their paths adjusted to be relative to the new document location.
 
-When `processor.data().filePathChanges` is set,
+When `processor.data().filePathChanges` is set,
 this plugin adjusts all relative URLs
 for images, definitions, and links
 to ensure they are accurate.
@@ -140,8 +140,8 @@ Hello. I am the included. Test image:
 
 ## API
 
-Please, read the [API reference](/docs/index.md).
+Please, read the [API reference](/docs/index.md).
 
 ## License
 
-[MIT](LICENSE) © [Sergei S. Betke](https://github.com/sergey-s-betke)
+[MIT](LICENSE) © [Sergei S. Betke](https://github.com/sergey-s-betke)

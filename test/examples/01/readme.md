@@ -3,7 +3,7 @@
 Images and links within the markdown file will have
 their paths adjusted to be relative to the new document location.
 
-When `processor.data().filePathChanges` is set,
+When `processor.data().filePathChanges` is set,
 this plugin adjusts all relative URLs
 for images, definitions, and links
 to ensure they are accurate.
